@@ -5,61 +5,64 @@
 get_header(); ?>
 
 <main class="eligibility-page">
-    <section class="page-header" style="background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('https://temp.temporarysites.link/wp-content/uploads/2026/04/campus-students.webp') center/cover; color: var(--white); padding: 80px 0; text-align: center;">
+    <section class="page-header" style="background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('https://temp.temporarysites.link/wp-content/uploads/2026/04/campus-students.webp') center/cover; color: var(--white); padding: 100px 0; text-align: center;">
         <div class="container">
-            <p class="accent-font" style="color: var(--gold); margin-bottom: 10px;">Requirements</p>
-            <h1 style="font-size: 3rem; color: var(--white);">Grant Eligibility</h1>
-            <p style="opacity: 0.8; max-width: 600px; margin: 20px auto 0;">Learn about the requirements for the $1,000 Jake Fruge Jr Grant.</p>
+            <p class="accent-font" style="color: var(--gold); margin-bottom: 15px; letter-spacing: 0.2em;">Requirements</p>
+            <h1 class="section-title" style="color: var(--white); font-size: 3.5rem;">Grant Eligibility</h1>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.8); margin-bottom: 0;">Straightforward criteria for the $1,000 annual grant.</p>
         </div>
     </section>
 
-    <section class="eligibility-content">
+    <section class="eligibility-details" style="padding: 100px 0; background-color: var(--cream);">
         <div class="container">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: flex-start;">
-                <div style="background: var(--white); padding: 50px; border-radius: 8px; box-shadow: 0 4px 30px rgba(0,0,0,0.05);">
-                    <h2 style="font-size: 2.2rem; margin-bottom: 30px;">Who Can Apply?</h2>
-                    <p style="margin-bottom: 30px; line-height: 1.8;">The Jake Fruge Jr Grant is open to students who are currently pursuing higher education in the United States. We believe in supporting drive over diplomas, which is why we've kept our requirements straightforward.</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 60px;">
+                <!-- Left: Who Can Apply -->
+                <div style="background: var(--white); padding: 50px; box-shadow: 0 10px 40px rgba(0,0,0,0.05);">
+                    <h2 class="section-title" style="font-size: 2rem;">Who Can Apply?</h2>
+                    <p style="margin-bottom: 30px; color: #555; line-height: 1.8;">We've removed the traditional academic gatekeeping. We want to hear from students who have a clear vision for their future.</p>
                     
                     <ul style="list-style: none; padding: 0;">
-                        <li style="margin-bottom: 20px; display: flex; align-items: center; gap: 15px;">
-                            <span style="background: var(--gold); color: var(--navy); width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">✓</span>
-                            <span>Currently enrolled at an accredited US-based college or university.</span>
+                        <li style="margin-bottom: 20px; display: flex; gap: 15px; align-items: flex-start;">
+                            <div style="color: var(--gold); font-size: 1.2rem;"><i class="fas fa-check-circle"></i></div>
+                            <p><strong>Enrolled Students:</strong> Must be currently enrolled at an accredited US college or university.</p>
                         </li>
-                        <li style="margin-bottom: 20px; display: flex; align-items: center; gap: 15px;">
-                            <span style="background: var(--gold); color: var(--navy); width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">✓</span>
-                            <span>Open to undergraduate, graduate, and doctoral students.</span>
+                        <li style="margin-bottom: 20px; display: flex; gap: 15px; align-items: flex-start;">
+                            <div style="color: var(--gold); font-size: 1.2rem;"><i class="fas fa-check-circle"></i></div>
+                            <p><strong>Any Major:</strong> Open to all fields of study, from business and STEM to arts and humanities.</p>
                         </li>
-                        <li style="margin-bottom: 20px; display: flex; align-items: center; gap: 15px;">
-                            <span style="background: var(--gold); color: var(--navy); width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">✓</span>
-                            <span>Available to students in any field of study / major.</span>
+                        <li style="margin-bottom: 20px; display: flex; gap: 15px; align-items: flex-start;">
+                            <div style="color: var(--gold); font-size: 1.2rem;"><i class="fas fa-check-circle"></i></div>
+                            <p><strong>All Levels:</strong> Available to undergraduate, graduate, and doctoral students.</p>
                         </li>
-                        <li style="margin-bottom: 20px; display: flex; align-items: center; gap: 15px;">
-                            <span style="background: var(--gold); color: var(--navy); width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">✓</span>
-                            <span>International students studying in the US are eligible.</span>
+                        <li style="margin-bottom: 20px; display: flex; gap: 15px; align-items: flex-start;">
+                            <div style="color: var(--gold); font-size: 1.2rem;"><i class="fas fa-check-circle"></i></div>
+                            <p><strong>No GPA Minimum:</strong> We care more about your drive than your transcript.</p>
                         </li>
                     </ul>
                 </div>
 
-                <div style="background: #f0ede8; padding: 50px; border-radius: 8px;">
-                    <h2 style="font-size: 2.2rem; margin-bottom: 30px;">What We Value</h2>
-                    <p style="margin-bottom: 25px; line-height: 1.8;">Unlike traditional scholarships, we do not require a specific GPA or a lengthy essay. We are looking for the "Doers" — those who demonstrate:</p>
+                <!-- Right: Values -->
+                <div style="padding: 50px; background-color: var(--cream-dark); border-radius: 4px;">
+                    <h2 class="section-title" style="font-size: 2rem;">What We Look For</h2>
+                    <p style="margin-bottom: 30px; color: #555;">Jake Fruge Jr personally participates in the selection process. He is looking for "Doers" who embody these traits:</p>
                     
-                    <div style="margin-bottom: 20px;">
-                        <h4 class="accent-font" style="color: var(--navy); font-size: 0.9rem; margin-bottom: 5px;">Resilience</h4>
-                        <p style="font-size: 0.95rem; opacity: 0.7;">The ability to bounce back from setbacks and keep moving forward.</p>
-                    </div>
-                    <div style="margin-bottom: 20px;">
-                        <h4 class="accent-font" style="color: var(--navy); font-size: 0.9rem; margin-bottom: 5px;">Ambition</h4>
-                        <p style="font-size: 0.95rem; opacity: 0.7;">A clear vision for your future and the drive to achieve it.</p>
-                    </div>
-                    <div style="margin-bottom: 20px;">
-                        <h4 class="accent-font" style="color: var(--navy); font-size: 0.9rem; margin-bottom: 5px;">Innovation</h4>
-                        <p style="font-size: 0.95rem; opacity: 0.7;">A willingness to think differently and solve problems creatively.</p>
+                    <div style="margin-bottom: 30px;">
+                        <h4 style="color: var(--navy); margin-bottom: 10px; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 0.1em;" class="accent-font">1. Resilience</h4>
+                        <p style="font-size: 0.95rem; color: #666;">Have you overcome obstacles? Do you keep moving forward when things get difficult?</p>
                     </div>
 
-                    <div style="margin-top: 40px; padding-top: 30px; border-top: 1px solid #ddd; text-align: center;">
-                        <p style="margin-bottom: 20px; font-weight: 700;">Ready to take the next step?</p>
-                        <a href="<?php echo esc_url(home_url('/apply')); ?>" class="btn btn-navy" style="width: 100%;">Submit Your Application</a>
+                    <div style="margin-bottom: 30px;">
+                        <h4 style="color: var(--navy); margin-bottom: 10px; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 0.1em;" class="accent-font">2. Vision</h4>
+                        <p style="font-size: 0.95rem; color: #666;">Do you have a clear plan for what you want to achieve with your education and career?</p>
+                    </div>
+
+                    <div style="margin-bottom: 40px;">
+                        <h4 style="color: var(--navy); margin-bottom: 10px; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 0.1em;" class="accent-font">3. Execution</h4>
+                        <p style="font-size: 0.95rem; color: #666;">Do you have a bias toward action? Are you already taking steps toward your goals?</p>
+                    </div>
+
+                    <div style="text-align: center;">
+                        <a href="<?php echo home_url('/apply'); ?>" class="btn btn-navy" style="width: 100%;">Apply for the $1,000 Grant</a>
                     </div>
                 </div>
             </div>

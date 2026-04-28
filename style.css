@@ -3,15 +3,15 @@ Theme Name: Jake Fruge Jr Grant
 Theme URI: https://jakefrugejrgrant.com/
 Author: Jake Fruge Jr Grant
 Description: A modern, clean WordPress theme for the Jake Fruge Jr Grant.
-Version: 1.0.0
+Version: 1.1.0
 Text Domain: jake-fruge-jr-grant
 */
 
 /* Reset & Base Styles */
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Lato', sans-serif; line-height: 1.6; color: #0a192f; background-color: #fdfbf7; }
+body { font-family: 'Lato', sans-serif; line-height: 1.6; color: #0a192f; background-color: #fdfbf7; overflow-x: hidden; }
 h1, h2, h3, h4, h5, h6 { font-family: 'Cormorant Garamond', serif; font-weight: 700; color: #0a192f; }
-.accent-font { font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 0.1em; }
+.accent-font { font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 0.15em; }
 
 /* Colors */
 :root {
@@ -20,25 +20,72 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Cormorant Garamond', serif; font-weight: 
     --gold: #c5a059;
     --gold-light: #d4b47a;
     --cream: #fdfbf7;
+    --cream-dark: #f0ede8;
     --white: #ffffff;
+    --red: #e53e3e;
 }
 
 /* Layout */
 .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-section { padding: 80px 0; }
+section { padding: 100px 0; }
+.text-center { text-align: center; }
+.mb-20 { margin-bottom: 20px; }
+.mb-40 { margin-bottom: 40px; }
+.mb-60 { margin-bottom: 60px; }
 
-/* Components */
+/* Typography */
+.section-tag { color: var(--gold); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.3em; margin-bottom: 15px; display: block; }
+.section-title { font-size: 2.8rem; margin-bottom: 25px; line-height: 1.2; }
+.section-subtitle { font-size: 1.1rem; color: #444; max-width: 750px; margin: 0 auto 40px; }
+
+/* Buttons */
 .btn {
     display: inline-block;
-    padding: 12px 32px;
-    border-radius: 4px;
+    padding: 14px 36px;
+    border-radius: 0;
     text-decoration: none;
     font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
     transition: all 0.3s ease;
     cursor: pointer;
     border: none;
+    font-size: 0.85rem;
 }
 .btn-gold { background-color: var(--gold); color: var(--navy); }
-.btn-gold:hover { background-color: var(--gold-light); }
+.btn-gold:hover { background-color: var(--gold-light); transform: translateY(-2px); }
 .btn-navy { background-color: var(--navy); color: var(--white); }
-.btn-navy:hover { background-color: var(--navy-light); }
+.btn-navy:hover { background-color: var(--navy-light); transform: translateY(-2px); }
+.btn-outline { border: 1px solid rgba(255,255,255,0.4); color: var(--white); }
+.btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+
+/* Header & Nav */
+.site-header { background: var(--navy); padding: 0; position: fixed; top: 0; width: 100%; z-index: 1000; transition: all 0.3s; }
+.header-container { display: flex; justify-content: space-between; align-items: center; height: 80px; }
+.logo a { color: var(--white); text-decoration: none; font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 700; font-style: italic; }
+.logo span { color: var(--gold); }
+.main-navigation ul { list-style: none; display: flex; gap: 5px; }
+.main-navigation li a { color: rgba(255,255,255,0.8); text-decoration: none; font-family: 'Oswald', sans-serif; font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase; padding: 30px 15px; display: block; transition: all 0.3s; border-bottom: 2px solid transparent; }
+.main-navigation li a:hover, .main-navigation li.current-menu-item a { color: var(--gold); border-bottom-color: var(--gold); }
+
+/* Forms */
+.form-group { margin-bottom: 20px; }
+.form-label { display: block; font-family: 'Oswald', sans-serif; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--navy); margin-bottom: 6px; }
+.form-control { width: 100%; padding: 12px 16px; border: 1px solid #e2e8f0; background: #fff; font-family: 'Lato', sans-serif; font-size: 0.9rem; transition: border-color 0.3s; }
+.form-control:focus { outline: none; border-color: var(--gold); }
+
+/* Table */
+.data-table { width: 100%; border-collapse: collapse; margin: 40px 0; }
+.data-table tr:nth-child(even) { background-color: var(--cream-dark); }
+.data-table td { padding: 15px 25px; border: none; color: var(--navy); font-size: 0.95rem; }
+.data-table td:first-child { font-family: 'Oswald', sans-serif; font-weight: 600; text-transform: uppercase; font-size: 0.75rem; color: var(--navy); width: 40%; }
+
+/* FAQ Accordion */
+.faq-item { background: var(--white); margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+.faq-question { padding: 25px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+.faq-question h3 { font-size: 1.2rem; margin: 0; color: var(--navy); }
+.faq-question span { color: var(--gold); font-size: 1.5rem; transition: transform 0.3s; }
+.faq-answer { padding: 0 25px 25px; display: none; color: #666; font-size: 0.95rem; line-height: 1.8; }
+.faq-item.is-active .faq-question span { transform: rotate(45deg); }
+.faq-item.is-active .faq-answer { display: block; }
