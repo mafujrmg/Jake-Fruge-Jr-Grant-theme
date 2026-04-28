@@ -19,27 +19,24 @@
             wp_nav_menu(array(
                 'theme_location' => 'primary',
                 'container' => false,
-                'fallback_cb' => false,
+                'fallback_cb' => 'wp_page_menu',
                 'items_wrap' => '<ul>%3$s</ul>',
             ));
             ?>
         </nav>
 
-        <button class="mobile-menu-toggle" aria-controls="primary-menu" aria-expanded="false" style="display: none; background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer;">
+        <button class="mobile-menu-toggle" aria-controls="primary-menu" aria-expanded="false">
             <i class="fas fa-bars"></i>
         </button>
     </div>
 </header>
 
-<div style="height: 80px;"></div> <!-- Spacer for fixed header -->
+<div class="header-spacer" style="height: 80px;"></div> <!-- Spacer for fixed header -->
 
 <style>
-    @media (max-width: 768px) {
-        .mobile-menu-toggle { display: block !important; }
-        .main-navigation { position: absolute; top: 70px; left: 0; width: 100%; background: var(--navy); display: none; padding: 20px 0; }
-        .main-navigation.is-open { display: block; }
-        .main-navigation ul { flex-direction: column; gap: 0; }
-        .main-navigation li a { padding: 15px 20px; border: none; }
+    body.admin-bar .header-spacer { height: 80px; }
+    @media (max-width: 991px) {
+        .header-spacer { height: 70px !important; }
     }
 </style>
 

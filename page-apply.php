@@ -5,7 +5,7 @@
 get_header(); ?>
 
 <main class="apply-page">
-    <section class="page-header" style="background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('https://temp.temporarysites.link/wp-content/uploads/2026/04/application-desk.webp') center/cover; color: var(--white); padding: 100px 0; text-align: center;">
+    <section class="page-header" style="background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('https://temp.temporarysites.link/wp-content/uploads/2026/04/application-desk.webp') center/cover; color: var(--white); padding: 120px 0; text-align: center;">
         <div class="container">
             <p class="accent-font" style="color: var(--gold); margin-bottom: 15px; letter-spacing: 0.2em;">Apply for the Grant</p>
             <h1 class="section-title" style="color: var(--white); font-size: 3.5rem;">Join the Next Generation</h1>

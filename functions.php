@@ -32,6 +32,7 @@ function jfj_grant_register_cpts() {
         'labels' => array(
             'name' => __('Applications', 'jake-fruge-jr-grant'),
             'singular_name' => __('Application', 'jake-fruge-jr-grant'),
+            'all_items' => __('All Applications', 'jake-fruge-jr-grant'),
         ),
         'public' => false,
         'show_ui' => true,
@@ -39,6 +40,7 @@ function jfj_grant_register_cpts() {
         'hierarchical' => false,
         'supports' => array('title', 'editor', 'custom-fields'),
         'menu_icon' => 'dashicons-welcome-write-blog',
+        'show_in_menu' => true,
     ));
 
     // Contact Submissions
@@ -46,6 +48,7 @@ function jfj_grant_register_cpts() {
         'labels' => array(
             'name' => __('Contact Submissions', 'jake-fruge-jr-grant'),
             'singular_name' => __('Contact Submission', 'jake-fruge-jr-grant'),
+            'all_items' => __('All Contact Submissions', 'jake-fruge-jr-grant'),
         ),
         'public' => false,
         'show_ui' => true,
@@ -53,6 +56,7 @@ function jfj_grant_register_cpts() {
         'hierarchical' => false,
         'supports' => array('title', 'editor', 'custom-fields'),
         'menu_icon' => 'dashicons-email',
+        'show_in_menu' => true,
     ));
 }
 add_action('init', 'jfj_grant_register_cpts');
